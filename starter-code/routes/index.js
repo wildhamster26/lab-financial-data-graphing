@@ -6,4 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.post('/', function(req, res, next) {
+  console.log(req.params.startMonth);
+  console.log(req.params.endMonth);
+  // let start = req.params.
+  res.render('index');
+});
+
 module.exports = router;

@@ -7,6 +7,15 @@
   <body>
     <h1> {{title}} </h1>
     <p>Welcome to  {{title}} </p>
-  </body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+   
+   <form action="/" method="POST">
+    <input type="date" id="startMonth" name="startMonth">
+    <input type="date" id="endMonth" name="endMonth">
+    <button>Submit</button>
+   </form>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="/javascripts/financial-data.js" charset="utf-8"></script>
+  </body>
 </html>
